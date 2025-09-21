@@ -25,7 +25,7 @@ export default function Home() {
                   alt="Signal Transform"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
+                  className="h-full w-full rounded-lg object-cover"
                   priority
                 />
               </AspectRatio>
@@ -50,7 +50,7 @@ export default function Home() {
                   alt="File sharing project"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
+                  className="h-full w-full rounded-lg object-cover"
                 />
               </AspectRatio>
             </div>
@@ -69,12 +69,21 @@ export default function Home() {
           >
             <div className="rounded-lg overflow-hidden bg-foreground/[0.06] transition-transform duration-300 ease-out group-hover:scale-[1.05]">
               <AspectRatio ratio={16 / 9} className="rounded-lg">
+                {/* Light logo */}
                 <Image
                   src="/github.svg"
                   alt="GitHub profile"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="h-full w-full rounded-lg object-contain p-8 dark:brightness-[0.9] dark:grayscale"
+                  className="h-full w-full rounded-lg object-contain p-8 dark:hidden"
+                />
+                {/* Dark logo */}
+                <Image
+                  src="/github-dark.svg"
+                  alt="GitHub profile"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="h-full w-full rounded-lg object-contain p-8 hidden dark:block"
                 />
               </AspectRatio>
             </div>
