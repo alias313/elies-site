@@ -62,7 +62,7 @@ export default function Home() {
 
           {/* GitHub */}
           <a
-            href="https://github.com/alias313"
+            href="https://github.com/eliesgalvira"
             target="_blank"
             rel="noopener noreferrer"
             className="group block"
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
             <div className="mt-3">
               <h3 className="font-medium">GitHub</h3>
-              <p className="text-sm text-foreground/70">github.com/alias313</p>
+              <p className="text-sm text-foreground/70">github.com/eliesgalvira</p>
             </div>
           </a>
         </div>
