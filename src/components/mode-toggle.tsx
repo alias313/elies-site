@@ -21,7 +21,7 @@ export function ModeToggle() {
       type="button"
       aria-label="Toggle theme"
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="relative inline-flex h-10 w-10 items-center justify-center rounded-md border border-black/[.08] dark:border-white/[.145] text-sm transition-colors hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a]"
+      className="relative inline-flex h-10 w-10 items-center justify-center rounded-md border border-black/[.08] dark:border-white/[.145] bg-white dark:bg-[#1a1a1a] text-black dark:text-white text-sm transition-colors hover:bg-[#f2f2f2] dark:hover:bg-[#222]"
     >
       <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
       <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
