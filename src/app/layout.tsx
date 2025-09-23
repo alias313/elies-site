@@ -19,7 +19,10 @@ export const metadata: Metadata = {
   title: "elies.site",
   description: "My personal website",
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon1.png", sizes: "96x96", type: "image/png" },
+    ],
     apple: [
       { url: "/apple-icon.png" },
     ],
