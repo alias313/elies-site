@@ -11,7 +11,40 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Signal Transform */}
+          {/* GitHub */}
+          <a
+            href="https://github.com/eliesgalvira"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block"
+          >
+            <div className="rounded-lg overflow-hidden bg-foreground/[0.06] transition-transform duration-300 ease-out group-hover:scale-[1.05]">
+              <AspectRatio ratio={16 / 9} className="rounded-lg">
+                {/* Light logo */}
+                <Image
+                  src="/github.svg"
+                  alt="GitHub profile"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="h-full w-full rounded-lg object-contain p-8 dark:hidden"
+                />
+                {/* Dark logo */}
+                <Image
+                  src="/github-dark.svg"
+                  alt="GitHub profile"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="h-full w-full rounded-lg object-contain p-8 hidden dark:block"
+                />
+              </AspectRatio>
+            </div>
+            <div className="mt-3">
+              <h3 className="font-medium">GitHub</h3>
+              <p className="text-sm text-foreground/70">github.com/eliesgalvira</p>
+            </div>
+          </a>
+
+          {/* Signal Transformer Tool */}
           <a
             href="https://signaltransform.net"
             target="_blank"
@@ -26,6 +59,7 @@ export default function Home() {
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="h-full w-full rounded-lg object-cover"
+                  priority
                 />
               </AspectRatio>
             </div>
@@ -59,36 +93,27 @@ export default function Home() {
             </div>
           </a>
 
-          {/* GitHub */}
+          {/* Online Clipboard */}
           <a
-            href="https://github.com/eliesgalvira"
+            href="https://clipboard-box.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="group block"
           >
             <div className="rounded-lg overflow-hidden bg-foreground/[0.06] transition-transform duration-300 ease-out group-hover:scale-[1.05]">
               <AspectRatio ratio={16 / 9} className="rounded-lg">
-                {/* Light logo */}
                 <Image
-                  src="/github.svg"
-                  alt="GitHub profile"
+                  src="/clipboard-box.png"
+                  alt="Online Clipboard"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="h-full w-full rounded-lg object-contain p-8 dark:hidden"
-                />
-                {/* Dark logo */}
-                <Image
-                  src="/github-dark.svg"
-                  alt="GitHub profile"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="h-full w-full rounded-lg object-contain p-8 hidden dark:block"
+                  className="h-full w-full rounded-lg object-cover"
                 />
               </AspectRatio>
             </div>
             <div className="mt-3">
-              <h3 className="font-medium">GitHub</h3>
-              <p className="text-sm text-foreground/70">github.com/eliesgalvira</p>
+              <h3 className="font-medium">Online Clipboard</h3>
+              <p className="text-sm text-foreground/70">clipboard-box.vercel.app</p>
             </div>
           </a>
         </div>
