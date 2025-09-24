@@ -22,7 +22,7 @@ export default function Home() {
               <AspectRatio ratio={16 / 9} className="rounded-lg">
                 <Image
                   src="/cropped-sigtransform.webp"
-                  alt="Signal Transform"
+                  alt="Signal Transformer Tool"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="h-full w-full rounded-lg object-cover"
@@ -30,7 +30,7 @@ export default function Home() {
               </AspectRatio>
             </div>
             <div className="mt-3">
-              <h3 className="font-medium">Signal Transform</h3>
+              <h3 className="font-medium">Signal Transformer Tool</h3>
               <p className="text-sm text-foreground/70">signaltransform.net</p>
             </div>
           </a>
