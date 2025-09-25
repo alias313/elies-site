@@ -140,6 +140,30 @@ export default function Home() {
               <p className="text-sm text-foreground/70">clipboard-box.vercel.app</p>
             </div>
           </a>
+
+          {/* AI Product Designer */}
+          <a
+            href="https://github.com/eliesgalvira/ai-product-chat"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block"
+          >
+            <div className="rounded-lg overflow-hidden bg-foreground/[0.06] transition-transform duration-300 ease-out group-hover:scale-[1.05]">
+              <AspectRatio ratio={16 / 9} className="rounded-lg">
+                <Image
+                  src="/ai-product-chat.png"
+                  alt="AI Product Designer"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="h-full w-full rounded-lg object-cover"
+                />
+              </AspectRatio>
+            </div>
+            <div className="mt-3">
+              <h3 className="font-medium">AI Product Designer</h3>
+              <p className="text-sm text-foreground/70">github.com/eliesgalvira/ai-product-chat</p>
+            </div>
+          </a>
         </div>
       </main>
     </div>
